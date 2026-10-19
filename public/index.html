@@ -32,7 +32,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 @media(max-width:370px){.brandlogo{width:112px}}
 /* A debreceni Nagytemplom jól látható, miközben a címsor olvasható marad */
 @media(min-width:701px){.hero{background-image:linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.77) 25%,rgba(255,255,255,.10) 57%,transparent 75%),url('/debrecen-hatter.webp')}}
-</style></head><body>
+</style>
+<style id="vill-centrum-single-church-fix">
+/* A templom egyetlen forrásból, a hero háttérképeként jelenjen meg.
+   A régebbi CSS-szabályok a bal oldali ::before rétegen újra kirajzolták. */
+.hero > div:first-child::before { content: none !important; display: none !important; }
+</style>
+</head><body>
 
 <div class="herobg"><header class="wrap"><a class="brand" href="#"><img class="brandlogo" src="/vill-centrum-logo.webp" alt="Vill-Centrum Kft." width="252" height="90"> <span class="brandtext">Villanyszerelő Debrecen</span></a><nav><a href="#szolgaltatasok">Szolgáltatások</a><a href="#munkaink">Munkáink</a><a href="#kapcsolat">Kapcsolat</a></nav><a class="btn headercta" href="#kapcsolat">Ajánlatkérés</a><button class="menu" aria-label="Menü megnyitása" aria-expanded="false">☰</button></header>
 <main><section class="hero wrap"><div><div class="heroline"></div><h1 id="headline">Biztos alap az otthonában.</h1><p class="intro">Villanyszerelés Debrecenben és környékén</p><div class="actions"><a href="tel:+36203440710" class="btn">☎ Hívás</a><a href="#kapcsolat" class="btn secondary">Ajánlatkérés ↗</a></div></div><div class="crop heroimage" style="aspect-ratio:524/387"><img fetchpriority="high" src="/reference.webp" alt="Elektromos elosztótábla, illusztráció" style="width:293.1297709923664%;height:264.5994832041344%;left:-116.41221374045803%;top:-42.63565891472868%"></div></section></div>
