@@ -1,0 +1,1 @@
+{"name":"vill-centrum","version":"1.0.0","private":true,"type":"module","engines":{"node":">=22"},"scripts":{"build":"node scripts/build.mjs","test":"node --test","dev":"node scripts/dev.mjs"}}
